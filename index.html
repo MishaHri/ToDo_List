@@ -8,7 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
 <script src = "JS/main.js" type = "module"></script>
-  <link rel ="style" href = "/sass/style.scss" />
+<link rel ="stylesheet/less" type="text/css" href= "styles.less" />
+<script src ="less.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.css.map">
   <title>To Do List</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <section class ="newItemEntry">
      <form id="itemEntryForTasks">
       <label for = "newItem">Enter a new task</label>
-      <input id ="newItem" type ="text" size ="40" aotocomplete="off" placeholder ="AddItem" tabindex ="0"/>
+      <input id ="newItem" type ="text" size ="40" aotocomplete="off" placeholder ="Add Item" tabindex ="0"/>
       <button id = "addItem" class = "button" title = "Add new item" aria-label="Add new item to list" tabindex = "0" >+</button>
      </form>
     </section>
@@ -30,20 +32,20 @@
     <hr />
 
     <div id ="listItems">
-      <div class ="item">
-        <input type ="checkbox" id ="1"
-        tabindex ="0">
-        <label for="1">eat</label>
-      </div>
-      <div class ="item">
-        <input type ="checkbox" id ="2"
-        tabindex ="0">
-        <label for="1">love</label>
-      </div>
-      <div class ="item">
-        <input type ="checkbox" id ="3"
-        tabindex ="0">
-        <label for="1">Gym</label>
+      <!-- <div class ="item"> -->
+        <!-- <input type ="checkbox" id ="1" -->
+        <!-- tabindex ="0"> -->
+        <!-- <label for="1">eat</label> -->
+      <!-- </div> -->
+      <!-- <div class ="item"> -->
+        <!-- <input type ="checkbox" id ="2" -->
+        <!-- tabindex ="0"> -->
+        <!-- <label for="1">love</label> -->
+      <!-- </div> -->
+      <!-- <div class ="item"> -->
+        <!-- <input type ="checkbox" id ="3" -->
+        <!-- tabindex ="0"> -->
+        <!-- <label for="1">Gym</label> -->
       </div>
 
     </div>

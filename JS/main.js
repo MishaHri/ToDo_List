@@ -27,6 +27,7 @@ refreshThePage();
 
 const refreshThePage = () => {
   clearListDisplay();
+  renderList();
 // render the list;
 //clear items entry;
 //set focus on items entry field;
@@ -53,3 +54,22 @@ const renderList = () => {
     buildListItem(item);
   });
 };
+
+const buildListItem = (item) => {
+    const div = document.createElement("div");
+    div.className = "item";
+    const check =document.createElement("input");
+    check.type ="checkbox";
+    check.id = item.getId();
+    check.tabIndex = 0;
+    // addClickListener to check box(check);
+    const label = document.createElement("label");
+    label.htmlFor =item.getId();
+    label.textContent = item.getItem();
+    div.appendChild(check);
+    div.appendChild(label);
+    const container = document.getElementById("listItems");
+    container.appendChild(div);
+
+
+}
